@@ -76,7 +76,7 @@ The usage is shown in the following code snippet:
 
 ![Screenshot](OverlaySpinnerExample.png)
 
-###Properties
+### Properties
 
 By the use of 'MarginTop' it is possible to set the distance between the spinners parent top border and the spinner itself - the default value is 8rem.
 
