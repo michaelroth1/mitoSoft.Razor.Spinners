@@ -2,6 +2,13 @@
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
+    <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
+    <Version>1.0.1</Version>
+    <Description>A library providing different spinners for Blazor websites</Description>
+    <Copyright>(c) mitoSoft</Copyright>
+    <PackageProjectUrl>https://github.com/michaelroth1/mitoSoft.Razor.Spinners</PackageProjectUrl>
+    <PackageIcon>mitoSoft.png</PackageIcon>
+    <PackageTags>Blazor Razor Spinners Spinner Component</PackageTags>
   </PropertyGroup>
 
   
@@ -34,6 +41,13 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="mitoSoft.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
   </ItemGroup>
 
 </Project>
