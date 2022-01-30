@@ -31,7 +31,7 @@ The usage is shown in the following code snippet:
 
         currentCount++;
         
-		_modal.Hide();
+	_modal.Hide();
     }
  
     ...
@@ -65,7 +65,7 @@ The usage is shown in the following code snippet:
 
         currentCount++;
         
-		_overlay.Hide();
+	_overlay.Hide();
     }
  
     ...
