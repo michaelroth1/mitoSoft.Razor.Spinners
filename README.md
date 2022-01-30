@@ -44,7 +44,7 @@ The usage is shown in the following code snippet:
 
 ## OverlaySpinner
 
-The OverlaySpinner pops up a standard Bootstrap spinner in front of a shaded overlay, which disable all frontend controls and avoid users of breaking their actual session.
+The OverlaySpinner pops up as a standard Bootstrap spinner in front of a shaded overlay, which disable all frontend controls and avoid users of breaking their actual session.
 The usage is shown in the following code snippet:
 
 ```c#
