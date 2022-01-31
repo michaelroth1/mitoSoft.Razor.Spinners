@@ -15,8 +15,7 @@ The usage is shown in the following code snippet:
 
 ```c#
   
-  ...
-  
+  ...  
   <mitoSoft.Razor.Spinners.ModalSpinner @ref="@_modal" />
 
   @code {
@@ -41,7 +40,6 @@ The usage is shown in the following code snippet:
 ### Look and Feel
 
 ![Screenshot](ModalSpinnerExample.png)
-
 ## OverlaySpinner
 
 The OverlaySpinner pops up as a standard Bootstrap spinner in front of a shaded overlay, which disable all frontend controls and avoid users of breaking their actual session.
@@ -49,8 +47,7 @@ The usage is shown in the following code snippet:
 
 ```c#
   
-  ...
-  
+  ...  
   <mitoSoft.Razor.Spinners.OverlaySpinner @ref="@_overlay" />
 
   @code {
@@ -75,13 +72,31 @@ The usage is shown in the following code snippet:
 ### Look and Feel
 
 ![Screenshot](OverlaySpinnerExample.png)
+## Default Style
 
-### Properties
+To apply a predefined style for the spinners use the following stylesheet 
 
-By the use of 'MarginTop' it is possible to set the distance between the spinners parent top border and the spinner itself - the default value is 8rem.
+./_content/mitoSoft.Razor.Spinners/css/default.css
 
-```c#
-  
-  <mitoSoft.Razor.Spinners.OverlaySpinner MarginTop="1" @ref="@_overlay" />
+in the 
+
+_Layout.cshtml 
+
+page.
+
+```HTML
+ 
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <base href="~/" />
+    <link rel="stylesheet" href="./_content/mitoSoft.Razor.Spinners/css/default.css" />
+    <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css" />
+    <link href="css/site.css" rel="stylesheet" />
+    <link href="mitoSoft.Razor.Spinners.Examples.DotNet6.styles.css" rel="stylesheet" />
+    <component type="typeof(HeadOutlet)" render-mode="ServerPrerendered" />
+</head>
 
 ```
