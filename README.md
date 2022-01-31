@@ -40,7 +40,6 @@ The usage is shown in the following code snippet:
 ### Look and Feel
 
 ![Screenshot](ModalSpinnerExample.png)
-
 ## OverlaySpinner
 
 The OverlaySpinner pops up as a standard Bootstrap spinner in front of a shaded overlay, which disable all frontend controls and avoid users of breaking their actual session.
@@ -73,7 +72,6 @@ The usage is shown in the following code snippet:
 ### Look and Feel
 
 ![Screenshot](OverlaySpinnerExample.png)
-
 ## Default Style
 
 To apply a predefined style for the spinners use the following stylesheet 
