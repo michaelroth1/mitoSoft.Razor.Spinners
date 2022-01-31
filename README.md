@@ -80,11 +80,13 @@ To apply a predefined style for the spinners use the following stylesheet
 
 ./_content/mitoSoft.Razor.Spinners/css/default.css
 
-in the 
+in 
 
-_Layout.cshtml 
+_Layout.cshtml (.Net6)
 
-page.
+or in
+
+_Host.cshtml (.Net5).
 
 ```HTML 
 <!DOCTYPE html>
