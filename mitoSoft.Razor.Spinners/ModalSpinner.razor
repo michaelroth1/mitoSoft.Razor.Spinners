@@ -4,14 +4,18 @@
 
 @inherits SynchronousDialog
 
-<ModalTemplate Visibility="@base.Visibility" Title="@Properties.Resources.please_wait_" ShowCloseButton="false">
-    <Content>
-        <div class="text-center">
-            <div class="spinner-border mitosoft-spinner mitosoft-modal-spinner" role="status">
-            </div>
-        </div>
-    </Content>
-</ModalTemplate>
+<div class="mitosoft-spinner">
+    <div class="mitosoft-spinner-modal">
+        <ModalTemplate Visibility="@base.Visibility" Title="@Properties.Resources.please_wait_" ShowCloseButton="false">
+            <Content>
+                <div class="text-center">
+                    <div class="spinner-border" role="status">
+                    </div>
+                </div>
+            </Content>
+        </ModalTemplate>
+    </div>
+</div>
 
 @code {
     [Parameter]

@@ -1,13 +1,13 @@
 ﻿
 <style>
-    .mitosoft-spinner-container {
+    .mitosoft-spinner-overlay-container {
         z-index: 5000;
         width: 100vw;
         height: 100vh;
         color: white;
     }
 
-    .mitosoft-spinner-overlay {
+    .mitosoft-spinner-overlay-background {
         position: fixed;
         top: 0;
         left: 0;
@@ -16,22 +16,17 @@
         width: 100%;
         height: 100%;
     }
-
-    .mitosoft-overlay-spinner-top {
-        height: @_top;
-    }
 </style>
 
 @if (this.ShowSpinner)
 {
-    <div class="mitosoft-spinner-overlay">
-        <div class="mitosoft-spinner-container">
-            <div class="row">
-                <div class="mitosoft-overlay-spinner-top" />
-            </div>
-            <div class="row">
-                <div class="text-center">
-                    <div class="spinner-border mitosoft-spinner mitosoft-overlay-spinner" role="status">
+    <div class="mitosoft-spinner">
+        <div class="mitosoft-spinner-overlay">
+            <div class="mitosoft-spinner-overlay-background">
+                <div class="mitosoft-spinner-overlay-container">
+                    <div class="text-center">
+                        <div class="spinner-border" role="status">
+                        </div>
                     </div>
                 </div>
             </div>
@@ -40,11 +35,6 @@
 }
 
 @code {
-    private string _top => $"{this.MarginTop.ToString()}rem";
-
-    [Parameter]
-    public int MarginTop { get; set; } = 8;
-
     [Parameter]
     public Action OnShow { get; set; }
 

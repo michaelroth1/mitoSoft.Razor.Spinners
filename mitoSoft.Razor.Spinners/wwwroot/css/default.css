@@ -1,0 +1,12 @@
+
+.mitosoft-spinner-overlay .text-center {
+    position: fixed;
+    top: 35%;
+    left: 50%;
+    margin-left: -2rem;
+}
+
+.mitosoft-spinner .spinner-border {
+    width: 4rem;
+    height: 4rem;
+}
