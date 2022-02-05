@@ -3,13 +3,13 @@
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.3</Version>
+    <Version>1.0.4</Version>
     <Description>A library providing different spinners for Blazor websites</Description>
     <Copyright>(c) mitoSoft</Copyright>
     <PackageProjectUrl>https://github.com/michaelroth1/mitoSoft.Razor.Spinners</PackageProjectUrl>
     <PackageIcon>mitoSoft.png</PackageIcon>
     <PackageTags>Blazor Razor Spinners Spinner Component</PackageTags>
-    <PackageReleaseNotes>[Feature] added default style in '...css/default.css'</PackageReleaseNotes>
+    <PackageReleaseNotes>[Feature] cleanup</PackageReleaseNotes>
   </PropertyGroup>
 
   
@@ -19,7 +19,7 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="5.0.13" />
-    <PackageReference Include="mitoSoft.Razor.Components" Version="6.2.1" />
+    <PackageReference Include="mitoSoft.Razor.Components" Version="6.3.0" />
   </ItemGroup>
 
   <ItemGroup>
