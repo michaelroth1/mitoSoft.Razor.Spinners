@@ -41,7 +41,8 @@
     [Parameter]
     public Action OnHide { get; set; }
 
-    protected bool ShowSpinner { get; set; }
+    [Parameter]
+    public bool ShowSpinner { get; set; }
 
     public virtual void Show()
     {

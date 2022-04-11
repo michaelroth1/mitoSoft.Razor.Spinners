@@ -1,15 +1,15 @@
-<Project Sdk="Microsoft.NET.Sdk.Razor">
+﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
 
   <PropertyGroup>
     <TargetFramework>net5.0</TargetFramework>
     <GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-    <Version>1.0.4</Version>
+    <Version>1.0.5</Version>
     <Description>A library providing different spinners for Blazor websites</Description>
     <Copyright>(c) mitoSoft</Copyright>
     <PackageProjectUrl>https://github.com/michaelroth1/mitoSoft.Razor.Spinners</PackageProjectUrl>
     <PackageIcon>mitoSoft.png</PackageIcon>
     <PackageTags>Blazor Razor Spinners Spinner Component</PackageTags>
-    <PackageReleaseNotes>[Feature] cleanup</PackageReleaseNotes>
+    <PackageReleaseNotes>[Feature] add 'ShowSpinner' parameter in 'OverlaySpinner' </PackageReleaseNotes>
   </PropertyGroup>
 
   
