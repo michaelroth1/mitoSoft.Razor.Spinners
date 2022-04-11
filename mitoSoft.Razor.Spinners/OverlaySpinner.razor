@@ -41,30 +41,38 @@
     [Parameter]
     public Action OnHide { get; set; }
 
+    private bool _showSpinner;
     [Parameter]
-    public bool ShowSpinner { get; set; }
+    public bool ShowSpinner
+    {
+        get
+        {
+            return this._showSpinner;
+        }
+        set
+        {
+            if (value && !this._showSpinner)
+            {
+                this.OnShow?.Invoke();
+                this._showSpinner = true;
+                this.InvokeAsync(StateHasChanged);
+            }
+            else if (!value && this._showSpinner)
+            {
+                this.OnHide?.Invoke();
+                this._showSpinner = false;
+                this.InvokeAsync(StateHasChanged);
+            }
+        }
+    }
 
     public virtual void Show()
     {
-        if (this.ShowSpinner == false)
-        {
-            this.ShowSpinner = true;
-
-            this.OnShow?.Invoke();
-
-            this.InvokeAsync(StateHasChanged);
-        }
+        this.ShowSpinner = true;
     }
 
     public virtual void Hide()
     {
-        if (this.ShowSpinner == true)
-        {
-            this.ShowSpinner = false;
-
-            this.OnHide?.Invoke();
-
-            this.InvokeAsync(StateHasChanged);
-        }
+        this.ShowSpinner = false;
     }
 }
